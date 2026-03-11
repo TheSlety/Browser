@@ -19,18 +19,23 @@ body {
     height: 6vh;
     position: absolute;
     margin-bottom: 25vh;
-    border-radius: 10% 20% 20% 10%;
+    border-radius: 10vh;
     background-color: #2a2a2a;
+    transition-duration: 0.3s;
 }
 
 .container {
+    width: calc(auto + 10vw);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10vh;
+    padding-inline: 0;
     background-color: #2a2a2a;
+    transition-duration: 0.4s;
 }
 
-.logo {
+.container * {
     width: 80px;
     height: 80px;
     margin: 20px;
@@ -39,4 +44,22 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #3a3a3a;
+    transition-duration: 0.2s;
+}
+
+.logo1 img {
+    object-fit: cover;
+}
+
+.container:hover {
+    padding-inline: 2vw;
+}
+
+.search:hover {
+    scale: 110%;
+}
+
+.logo:hover {
+    scale: 110%;
+    background-color: #404040;
 }
