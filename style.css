@@ -25,14 +25,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .search {
     width: 600px;
-    height: 6vh;
-    position: absolute;
-    margin-bottom: 10vh;
-    border-radius: 10vh;
+    height: 50px;
+    position: relative;
+    /* margin-bottom: 10vh; */
+    border-radius: 100px;
     background-color: #2a2a2a;
     transition-duration: 0.3s;
 }
@@ -59,10 +61,10 @@ header {
 .container {
     width: auto;
     height: 120px;
+    position: relative;
     display: flex;
     align-items: center;
-    margin-top: 15vh;
-    border-radius: 10vh;
+    border-radius: 100px;
     padding-inline: 0;
     background-color: #2a2a2a;
     transition-duration: 0.4s;
@@ -78,7 +80,7 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #3a3a3a;
+    background-color: transparent;
     transition-duration: 0.2s;
     caret-color: transparent;
 }
@@ -102,6 +104,11 @@ header {
 }
 
 @media screen and (max-width: 425px) {
+
+    header {
+        font-size: 2rem;
+    }
+
     .search {
         width: 250px;
         height: 4vh;
@@ -114,7 +121,6 @@ header {
     .container {
         max-width: 220px;
         height: 80px;
-        margin-top: 8vh;
         overflow-x: auto;
         overflow-y: hidden;
         scrollbar-width: none;
