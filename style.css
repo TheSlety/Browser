@@ -43,23 +43,25 @@ body {
 }
 
 .container {
-    width: calc(auto + 10vw);
+    width: auto;
+    height: 120px;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 15vh;
     border-radius: 10vh;
     padding-inline: 0;
     background-color: #2a2a2a;
     transition-duration: 0.4s;
+    overflow-x: none;
+    border: 10px solid #2a2a2a;
 }
 
 .container * {
     width: 80px;
     height: 80px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 100%;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     background-color: #3a3a3a;
@@ -83,4 +85,38 @@ body {
 .container *:hover {
     scale: 110%;
     background-color: #404040;
+}
+
+@media screen and (max-width: 425px) {
+    .search {
+        width: 250px;
+        height: 4vh;
+    }
+
+    .innertext input {
+        font-size: 15px;
+    }
+
+    .container {
+        max-width: 220px;
+        height: 80px;
+        margin-top: 8vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+    }
+
+    .container * {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .logo1 {
+        margin-left: 5px;
+    }
+
+    .container:hover {
+        padding-inline: 0;
+    }
 }
