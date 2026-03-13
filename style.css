@@ -140,3 +140,9 @@ header {
         padding-inline: 0;
     }
 }
+
+@media screen and (max-height: 500px) {
+    header {
+        display: none;
+    }
+}
