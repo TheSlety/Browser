@@ -77,11 +77,12 @@ header {
     width: 80px;
     height: 80px;
     margin: 10px;
+    border-color: transparent;
     border-radius: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background-color: #606060;
     transition-duration: 0.2s;
     caret-color: transparent;
 }
