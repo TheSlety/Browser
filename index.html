@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<header>Типо поисковик</header>
+<header>Geegle</header>
 
 <body>
     <div class="body">
@@ -18,27 +18,45 @@
             </div>
         </div>
         <div class="container">
-            <div class="logo1">
+            <button class="logo1" id="logo1">
                 <img src="logos/youtube.png" alt="1">
-            </div>
-            <div class="logo2">
+            </button>
+            <button class="logo2" id="logo2">
                 <img src="logos/Instagram.png" alt="2">
-            </div>
-            <div class="logo3">
+            </button>
+            <button class="logo3" id="logo3">
                 <img src="logos/telegram.png" alt="3">
-            </div>
-            <div class="logo4">
+            </button>
+            <button class="logo4" id="logo4">
                 <img src="logos/pinterest.png" alt="4">
-            </div>
-            <div class="logo5">
+            </button>
+            <button class="logo5" id="logo5">
                 <img src="logos/chatgpt.png" alt="5">
-            </div>
+            </button>
         </div>
         <div class="container-list">
             <div class="left"></div>
             <div class="right"></div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('logo1').addEventListener('click', function () {
+            window.open('https://www.youtube.com/', '_blank');
+        });
+        document.getElementById('logo2').addEventListener('click', function () {
+            window.open('https://www.instagram.com/', '_blank');
+        });
+        document.getElementById('logo3').addEventListener('click', function () {
+            window.open('https://web.telegram.org/', '_blank');
+        });
+        document.getElementById('logo4').addEventListener('click', function () {
+            window.open('https://www.pinterest.com/', '_blank');
+        });
+        document.getElementById('logo5').addEventListener('click', function () {
+            window.open('https://chat.openai.com/', '_blank');
+        });
+    </script>
 </body>
 
 </html>
